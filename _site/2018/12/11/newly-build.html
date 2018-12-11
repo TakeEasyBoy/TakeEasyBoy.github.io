@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>创建jekyll</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <!-- 用于渲染导航 -->
+  <nav>
+  
+  <a href="/" >
+    Home
+  </a>
+  
+  <a href="/about.html" >
+    About
+  </a>
+  
+  <a href="/blog.html" >
+    Blog
+  </a>
+  
+</nav>
+  <!-- content用于渲染调用layout的页面的内容 -->
+  <h1>创建jekyll</h1>
+<p>11 Dec 2018 - chao</p>
+<main style="width:1200px;margin: 0 auto">
+  <h2 id="windows下安装这个玩意">windows下安装这个玩意</h2>
+
+<h2 id="setup">Setup</h2>
+<p>以<strong>windows</strong>为例</p>
+<ol>
+  <li><a href="https://rubyinstaller.org/downloads/">install ruby</a> 下载最新版本包含devkit的包,然后一路next</li>
+  <li>安装<strong>jekyll</strong>,命令行中执行:  <code class="highlighter-rouge">gem install jekyll bundler</code></li>
+  <li>查看版本 <code class="highlighter-rouge">jekyll -v</code></li>
+  <li>新建一个文件夹,也可以是你的<strong>github.io</strong>的<strong>repo</strong>,在其根目录下创建一个<strong>index.html</strong>文件</li>
+</ol>
+
+<p>index.html</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Home<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<ol>
+  <li>此时就可以执行 <code class="highlighter-rouge">jekyll build</code>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS C:\_workarea\codes\TakeEasyBoy.github.io&gt; jekyll build
+Configuration file: none
+         Source: C:/_workarea/codes/TakeEasyBoy.github.io
+    Destination: C:/_workarea/codes/TakeEasyBoy.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+   Generating...
+                 done in 0.089 seconds.
+</code></pre></div>    </div>
+  </li>
+  <li>浏览器中查看 <code class="highlighter-rouge">jekyll serve</code> 浏览器中打开 <code class="highlighter-rouge">localhost:4000</code></li>
+</ol>
+
+<h2 id="liquid">Liquid</h2>
+<ol>
+  <li>Objects 使用双括号 创建jekyll</li>
+  <li>Tags 包含if for ``````</li>
+  <li>Filters  <code class="highlighter-rouge">Hi</code> 首字母大写</li>
+</ol>
+
+<h2 id="front-matter">Front Matter</h2>
+<p>Front Matter 实际上就是一个包含在了两个 <code class="highlighter-rouge">---</code>之间的 yaml的片段,</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+my_number: 5
+---
+</code></pre></div></div>
+<p>页面调用</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+<p>把之前的<strong>index.html</strong>做如下改造,然后看下浏览器变化</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Home
+---
+<span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>创建jekyll<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>hello world!<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<h2 id="includes">Includes</h2>
+<h2 id="data-files">Data Files</h2>
+<h2 id="assete">Assete</h2>
+<h2 id="blogging">Blogging</h2>
+<h2 id="collections">Collections</h2>
+<h2 id="deployment">Deployment</h2>
+
+</main>
+</body>
+</html>
