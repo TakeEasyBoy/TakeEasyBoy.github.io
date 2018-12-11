@@ -37,7 +37,7 @@ jobs:
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
       # Database setup temp delete
-      # - run: bundle exec rake db:create
+      - run: JEKYLL_ENV=production bundle exec jekyll build
       # - run: bundle exec rake db:schema:load
 
       # run tests!
