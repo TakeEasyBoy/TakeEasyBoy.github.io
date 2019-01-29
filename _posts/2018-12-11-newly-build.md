@@ -3,7 +3,7 @@ layout: post
 author: chao
 title: 创建jekyll
 ---
-## windows下安装这个玩意
+windows下安装这个玩意
 
 ## Setup
 以**windows**为例

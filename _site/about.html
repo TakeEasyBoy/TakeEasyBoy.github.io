@@ -6,16 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>关于</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- 用于渲染导航 -->
-  <nav>
+  <header class="header-content">
+    <nav class="navigation">
   
   <a href="/" >
     Home
   </a>
   
-  <a href="/about.html" class="current">
+  <a href="/about.html" class="nav-current">
     About
   </a>
   
@@ -24,10 +26,27 @@
   </a>
   
 </nav>
+  </header>
   <!-- content用于渲染调用layout的页面的内容 -->
-  <h2 id="about-page">About Page</h2>
+  <main class="blog-content">
+    <h2 id="about-page">About Page</h2>
 <p>注意yaml的格式 :后面需要一个空格
 我跟你讲,讲个锤子</p>
 
+<p>_post下的md文件,需要使用yyyy-mm-dd-name.md的格式书写,否则列表不会被渲染;因为jekyll在生成路径的时候回将其生成为yyyy/mm/dd/name.html的格式</p>
+
+<blockquote>
+  <p>安装 <a href="https://rubyinstaller.org/downloads/">install ruby</a>
+安装<strong>jekyll</strong>,命令行中执行:  <code class="highlighter-rouge">gem install jekyll bundler</code>
+<code class="highlighter-rouge">bundle install &amp;&amp; bundle exec jekyll serve</code> 浏览器中查看 0.0.0.0:4000</p>
+</blockquote>
+
+<h2 id="environment-jekyll_envproduction-bundle-exec-jekyll-build">environment JEKYLL_ENV=production bundle exec jekyll build</h2>
+<p>该功能可以用来实现一些在pro环境下的脚本引入</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+  </main>
+  <script src="/assets/js/blog.js"></script>
 </body>
 </html>

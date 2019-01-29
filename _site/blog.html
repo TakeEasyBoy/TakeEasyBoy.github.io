@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Blog</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- 用于渲染导航 -->
-  <nav>
+  <header class="header-content">
+    <nav class="navigation">
   
   <a href="/" >
     Home
@@ -19,33 +21,44 @@
     About
   </a>
   
-  <a href="/blog.html" class="current">
+  <a href="/blog.html" class="nav-current">
     Blog
   </a>
   
 </nav>
+  </header>
   <!-- content用于渲染调用layout的页面的内容 -->
-  <h1>Latest Posts</h1>
-
-<ul>
-  <!-- 文章列表都在 site.posts中 -->
-  
-    <li>
+  <main class="blog-content">
+      <h1>最近的文章</h1>
+  <ul>
+    <!-- 文章列表都在 site.posts中 -->
+    
+    <li class="blog-lists" onclick="handleDetail('/2019/01/29/vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8sentry%E7%9B%91%E6%8E%A7%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.html')">
       <!-- 这个title是在post中写的,就是显示的名字 -->
-      <h3><a href="/2018/12/11/secend.html">secend</a></h3>
-      <p><p>第一行文字用于概述,空一行后进行正文书写</p>
+      <h3 class="blog-list-title"><a href="/2019/01/29/vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8sentry%E7%9B%91%E6%8E%A7%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.html">vue中如何使用Sentry进行错误日志监控</a></h3>
+      <p class="blog-list-content"><p>vue中使用<strong>Sentry</strong>进行js错误日志监控</p>
 
 </p>
     </li>
-  
-    <li>
+    
+    <li class="blog-lists" onclick="handleDetail('/2018/12/11/secend.html')">
       <!-- 这个title是在post中写的,就是显示的名字 -->
-      <h3><a href="/2018/12/11/newly-build.html">创建jekyll</a></h3>
-      <p><h2 id="windows下安装这个玩意">windows下安装这个玩意</h2>
+      <h3 class="blog-list-title"><a href="/2018/12/11/secend.html">secend</a></h3>
+      <p class="blog-list-content"><p>第一行文字用于概述,空一行后进行正文书写</p>
 
 </p>
     </li>
-  
-</ul>
+    
+    <li class="blog-lists" onclick="handleDetail('/2018/12/11/newly-build.html')">
+      <!-- 这个title是在post中写的,就是显示的名字 -->
+      <h3 class="blog-list-title"><a href="/2018/12/11/newly-build.html">创建jekyll</a></h3>
+      <p class="blog-list-content"><p>windows下安装这个玩意</p>
+
+</p>
+    </li>
+    
+  </ul>
+  </main>
+  <script src="/assets/js/blog.js"></script>
 </body>
 </html>

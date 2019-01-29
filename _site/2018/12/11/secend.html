@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>secend</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- 用于渲染导航 -->
-  <nav>
+  <header class="header-content">
+    <nav class="navigation">
   
   <a href="/" >
     Home
@@ -24,11 +26,14 @@
   </a>
   
 </nav>
+  </header>
   <!-- content用于渲染调用layout的页面的内容 -->
-  <h1>secend</h1>
-<p>11 Dec 2018 - chao</p>
-<main style="width:1200px;margin: 0 auto">
-  <p>第一行文字用于概述,空一行后进行正文书写</p>
+  <main class="blog-content">
+    <section class="blog-article">
+  <h1 class="blog-article-title">secend</h1>
+  <p class="blog-article-subtitle">11 Dec 2018 - chao</p>
+  <article>
+    <p>第一行文字用于概述,空一行后进行正文书写</p>
 
 <p>Apple trees are cultivated worldwide, and are the most widely grown species in
 the genus Malus. The tree originated in Central Asia, where its wild ancestor,
@@ -36,6 +41,9 @@ Malus sieversii, is still found today. Apples have been grown for thousands of
 years in Asia and Europe, and were brought to North America by European
 colonists.</p>
 
-</main>
+  </article>
+</section>
+  </main>
+  <script src="/assets/js/blog.js"></script>
 </body>
 </html>

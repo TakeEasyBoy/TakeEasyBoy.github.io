@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>创建jekyll</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- 用于渲染导航 -->
-  <nav>
+  <header class="header-content">
+    <nav class="navigation">
   
   <a href="/" >
     Home
@@ -24,11 +26,14 @@
   </a>
   
 </nav>
+  </header>
   <!-- content用于渲染调用layout的页面的内容 -->
-  <h1>创建jekyll</h1>
-<p>11 Dec 2018 - chao</p>
-<main style="width:1200px;margin: 0 auto">
-  <h2 id="windows下安装这个玩意">windows下安装这个玩意</h2>
+  <main class="blog-content">
+    <section class="blog-article">
+  <h1 class="blog-article-title">创建jekyll</h1>
+  <p class="blog-article-subtitle">11 Dec 2018 - chao</p>
+  <article>
+    <p>windows下安装这个玩意</p>
 
 <h2 id="setup">Setup</h2>
 <p>以<strong>windows</strong>为例</p>
@@ -103,6 +108,9 @@ title: Home
 <h2 id="collections">Collections</h2>
 <h2 id="deployment">Deployment</h2>
 
-</main>
+  </article>
+</section>
+  </main>
+  <script src="/assets/js/blog.js"></script>
 </body>
 </html>
