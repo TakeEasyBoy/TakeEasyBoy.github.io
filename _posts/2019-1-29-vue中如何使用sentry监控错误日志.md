@@ -12,7 +12,6 @@ vue中使用**Sentry**进行js错误日志监控
 ### 安装插件
 ```
 cnpm i raven-js -S
-
 ```
 ### 使用
 ```
@@ -58,7 +57,7 @@ new Vue({
 [sentry官网](https://github.com/getsentry/sentry-webpack-plugin)
 
 
-### webpack.prod.conf配置
+## webpack.prod.conf配置
 
 ```
 安装 cnpm i @sentry/webpack-plugin -D
@@ -76,7 +75,7 @@ new SentryPlugin({
 ```
 
 
-### configfile:sentry.properties
+## configfile:sentry.properties
 
 ```
 # 生成的token
